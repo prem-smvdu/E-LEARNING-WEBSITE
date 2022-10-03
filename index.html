@@ -10,6 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+	<script src="jquery.min.js"></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
 	<script>
 		$(window).on('scroll', function(){
   			if($(window).scrollTop()){
@@ -51,7 +55,7 @@
 		<div class="side-menu" id="side-menu">
 			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
 			<div class="user">
-				<img src="images/creator/roshan.jpeg" alt="Username">
+				<img src="images/creator/sudhanshu.jpg" alt="Username">
 				<p>roshank9419</p>
 			</div>
 			<ul>
@@ -166,6 +170,7 @@
 	</div>
 
 <!-- Reviews by Students -->
+
 <div id="makeitfull">
 	<a href="#review_section"><img src="images/icon/makeitfull.png"></a>
 </div>
@@ -173,8 +178,8 @@
 	<div class="diffSection" id="review_section">
 		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">What the Students Say About Us?</p></center>
 	</div>
-	<div class="rev-container">
-		<div class="rev-card">
+	<div class="rev-container owl-carousel owl-theme">
+		<div class="rev-card item">
 			<div class="identity">
 				<img src="images/creator/humanNotExist1.jpg"><p>Sophie Daniel</p>
 				<h6>Java</h6>
@@ -187,7 +192,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="rev-card">
+		<div class="rev-card item">
 			<div class="identity">
 				<img src="images/creator/humanNotExist2.jpg"><p>Clayton Clair</p>
 				<h6>C/C++</h6>
@@ -200,7 +205,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="rev-card">
+		<div class="rev-card item">
 			<div class="identity">
 				<img src="images/creator/humanNotExist3.jpg"><p>Devyn Sethi</p>
 				<h6>JEE</h6>
@@ -213,7 +218,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="rev-card">
+		<div class="rev-card item">
 			<div class="identity">
 				<img src="images/creator/humanNotExist4.jpg"><p>Rylee Phillips</p>
 				<h6>Python</h6>
@@ -228,7 +233,34 @@
 		</div>
 	</div>
 </div>
+<script>
+	var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:2,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true
+});
+// 	$('.owl-carousel').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:true,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:3
+//         },
+//         1000:{
+//             items:5
+//         }
+//     }
+// })
 
+</script>
 <!-- CONTACT US -->
 	<div class="diffSection" id="contactus_section">
 		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>

@@ -610,8 +610,8 @@ form textarea {
 }
 .rev-container .rev-card {
 	/*overflow: hidden;*/
-	width: 550px;
-	height: 240px;
+	/* width: 550px; */
+	height: 250px;
 	margin-bottom: 40px;
 	background: #fff;
 	display: flex;
@@ -649,7 +649,8 @@ form textarea {
 	text-align: center;
 }
 .identity .rating img {
-	width: 12px;
+	display: initial !important;
+	width: 12px !important;
 	height: 12px;
 	margin-right: 5px;
 }
